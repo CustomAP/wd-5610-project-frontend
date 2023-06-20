@@ -3,9 +3,10 @@ import "./App.css";
 import Profile from "./profile";
 import Register from './register'
 import Home from "./home";
-import searchResults from './app/searchResultsSlice'
+// import searchResults from './app/searchResultsSlice'
 import Search from "./search";
-import { configureStore } from '@reduxjs/toolkit';
+import Details from "./details";
+// import { configureStore } from '@reduxjs/toolkit';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/search/:criteria" element={<Search/>} />
+          <Route path="/details/:ID" element={<Details/>} />
         </Routes>
     </BrowserRouter>
    
